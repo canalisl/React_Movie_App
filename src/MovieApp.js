@@ -4,7 +4,7 @@ import Detail from "./routes/Detail";
 
 function MovieApp() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path={process.env.PUBLIC_URL + "/"} element={<Home />} />
         {/* 디테일의 useParams로 변수 값(id)를 넘겨줌 */}
